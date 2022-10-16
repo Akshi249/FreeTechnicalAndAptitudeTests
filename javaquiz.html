@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>c programming quiz</title>
+<style>
+body{
+background-image:url('nice.jpeg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<script>
+var icnt=-1,dcnt=-1;
+//alert("before icnt:"+icnt+" "+"dcnt: "+dcnt);
+var incr=(function(){
+icnt=0;
+return function(){ icnt++;};
+}());
+var decr=(function(){
+ dcnt=0;
+return function(){dcnt--;};
+}());
+//alert("after icnt:"+icnt+" "+"dcnt: "+dcnt);
+function showscr()
+{
+//document.getElementById('totscr').innerHTML=(icnt+dcnt);
+document.getElementById('scr').value=(icnt+dcnt);
+}
+/*decr();
+incr();
+decr();*/
+//alert("after icnt:"+icnt+" "+"dcnt: "+dcnt);
+function fun1(id)
+{
+let x=document.getElementById("1q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "qa":document.getElementById("fqans").value="static";break;
+case "qb":document.getElementById("fqans").value="dynamic";break;
+case "qc":document.getElementById("fqans").value="depends";break;
+case "qd":document.getElementById("fqans").value="none";break;
+}
+showscr();
+}
+
+function fun2(id)
+{
+let x=document.getElementById("2q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q2a":document.getElementById("sqans").value="parent class";break;
+case "q2b":document.getElementById("sqans").value="abstract class";break;
+case "q2c":document.getElementById("sqans").value="child class";break;
+case "q2d":document.getElementById("sqans").value="none";break;
+}
+showscr();
+}
+
+function fun3(id)
+{
+let x=document.getElementById("3q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q3a":document.getElementById("tqans").value="true";break;
+case "q3b":document.getElementById("tqans").value="false";break;
+case "q3c":document.getElementById("tqans").value="may be";break;
+case "q3d":document.getElementById("tqans").value="none";break;
+}
+showscr();
+}
+
+function fun4(id)
+{
+let x=document.getElementById("4q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q4a":document.getElementById("ftqans").value="7";break;
+case "q4b":document.getElementById("ftqans").value="0";break;
+case "q4c":document.getElementById("ftqans").value="12";break;
+case "q4d":document.getElementById("ftqans").value="none";break;
+}
+showscr();
+}
+
+function fun5(id)
+{
+let x=document.getElementById("5q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q5a":document.getElementById("ffqans").value="String[] n=new String[5]";break;
+case "q5b":document.getElementById("ffqans").value="String n[]=new String[5]";break;
+case "q5c":document.getElementById("ffqans").value="String[] n=new String[0]";break;
+case "q5d":document.getElementById("ffqans").value="all are valid";break;
+}
+showscr();
+}
+
+/*function score()
+{
+var marks=document.getElementById('scr').value;
+alert("you have scored: "+marks);
+document.getElementById('src').style.visibility='visible';
+}*/
+</script>
+<div style="text-align:center;border:4px solid green;color:white;font-size:35px;background-color:blue;font-style:bold">
+FREE TECHNICAL AND APTITUDE TESTS
+</div>
+<h2 style="text-align:center">JAVA PROGRAMMING QUIZ</h2>
+<div>
+<div <?php echo $style3; ?> >
+<pre id="pr1"  >
+<form method="post" action="new_signup.php">
+<input type="text" name="nme" value=" <?php echo $name;?> " style="display:none">
+<input type="text" name="f1" value="id3" style="display:none">
+<div style="text-align:center"><pre style="font-size:20px;font-style:bold;display:inline;">Dont have an account? Create one</pre></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">First Name:<input type="text" name="fn" style="margin:5px;padding:5px" value="" id="fn" required></p></div>  
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">Last Name:<input type="text" name="ln" value="" style="margin:5px;padding:5px" id="ln" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Email Id:<input type="email" name="em" value="" style="margin:5px;padding:5px" id="em" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Password:<input type="password" name="pwd" style="margin:5px;padding:5px"  value="" id="pwd"></p></div>
+<div style="text-align:center"><p style="display:inline;margin:5px"><input type="submit" value="SIGN UP" style="background-color:green"></p></div>
+</form>
+</pre>
+
+<pre id="pr2">
+<form method="post" action="new_login.php">
+<input type="text" name="nme" value=" <?php echo $name; ?>" style="display:none">
+<input type="text" name="f1" value="id3" style="display:none">
+<div style="text-align:center"><pre style="font-size:20px;font-style:bold;display:inline;">Already have an account? Login here</pre></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Registered Email:<input type="email" name="em" style="margin:5px;padding:5px" value="" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Password:<input type="password" name="pwd" style="margin:5px;padding:5px" value="" required></p></div>
+<pre style='display:inline'>                                                                                                                  <span><a href="forgot.html" style='color:black;text-decoration:none;font-size:19px;font-style:bold'>Forgot Password?</a></span></pre>
+<div style="text-align:center"><p style="display:inline"><input type="submit" value="LOG IN" style="text-align:center;background-color:green"></p></div>
+</form>
+</pre>
+</div>
+</div>
+
+<div>
+<p style="font-style:bold;font-size:20px;border:2px solid black">if there is a private method in a class, what type of binding will be there?</p>
+<div id="1q">
+<p><button onclick="fun1(this.id)" id="qa" style="background-color:green;color:white">static</button></p>
+<p><button onclick="fun1(this.id)" id="qb" style="background-color:green;color:white">dynamic</button></p>
+<p><button onclick="fun1(this.id)" id="qc" style="background-color:green;color:white">depends</button></p>
+<p><button onclick="fun1(this.id)" id="qd" style="background-color:green;color:white">none</button></p>
+</div>
+</div>
+
+<div>
+<p style="border:2px solid black;font-size:20px;font-style:bold">abstract method can be in:</p>
+<div id="2q">
+<p><button onclick="fun2(this.id)" id="q2a" style="background-color:green;color:white">parent class</button></p>
+<p><button onclick="fun2(this.id)" id="q2b" style="background-color:green;color:white">abstract class</button></p>
+<p><button onclick="fun2(this.id)" id="q2c" style="background-color:green;color:white">child class</button></p>
+<p><button onclick="fun2(this.id)" id="q2d" style="background-color:green;color:white">none</button></p>
+</div>
+</div>
+
+<div>
+<p style="font-style:bold;font-size:20px;border:2px solid black">return type can be same in the method overriding</p>
+<div id="3q">
+<p><button onclick="fun3(this.id)" id="q3a" style="background-color:green;color:white">true</button></p>
+<p><button onclick="fun3(this.id)" id="q3b" style="background-color:green;color:white">false</button></p>
+<p><button onclick="fun3(this.id)" id="q3c" style="background-color:green;color:white">may be</button></p>
+<p><button onclick="fun3(this.id)" id="q3d" style="background-color:green;color:white">none</button></p>
+</div>
+</div>
+
+<div>
+<p style="font-style:bold;font-size:20px;border:2px solid black">
+what is the output of the following program segment?
+int arr[]=new int[9];
+for(int i=0;i<arr.length;i++)
+arr[i]=i+5;
+System.out.println(arr[7]);
+</p>
+<div id="4q">
+<p><button onclick="fun4(this.id)" id="q4a" style="background-color:green;color:white">7</button></p>
+<p><button onclick="fun4(this.id)" id="q4b" style="background-color:green;color:white">0</button></p>
+<p><button onclick="fun4(this.id)" id="q4c" style="background-color:green;color:white">12</button></p>
+<p><button onclick="fun4(this.id)" id="q4d" style="background-color:green;color:white">none</button></p>
+</div>
+</div>
+
+<div>
+<p style="border:2px solid black;font-style:bold;font-size:20px">which of the following, if any, is an valid array declaration?</p>
+<div id="5q">
+<p><button onclick="fun5(this.id)" id="q5a" style="background-color:green;color:white">String[] n=new String[5]</button></p>
+<p><button onclick="fun5(this.id)" id="q5b" style="background-color:green;color:white">String n[]=new String[5]</button></p>
+<p><button onclick="fun5(this.id)" id="q5c" style="background-color:green;color:white">String[] n=new String[0]</button></p>
+<p><button onclick="fun5(this.id)" id="q5d" style="background-color:green;color:white">all are valid</button></p>
+</div>
+</div>
+
+<form method="post" action="update.php">
+<input type="text" value="" name="fqans" id="fqans" style="display:none">
+<input type="text" value="" name="sqans" id="sqans" style="display:none">
+<input type="text" value="" name="tqans" id="tqans" style="display:none">
+<input type="text" value="" name="ftqans" id="ftqans" style="display:none">
+<input type="text" value="" name="ffqans" id="ffqans" style="display:none">
+<div><input type="text" style="display:none" id="scr" name="scr" value=0></div>
+<div><label style="border:2px solid black;font-size:20px;font-style:bold">enter the date of taking test:<input type="date" name="date" id="date" required><label></div>
+<div>
+<p style="font-style:bold;font-size:20px;border:2px solid black">select the test name:</p>
+<input type="radio" name="tnme" id="apt" value="aptitude quiz" required>
+<label for="apt" style="font-style:bold;font-size:20px">aptitude quiz</label><br>
+<input type="radio" name="tnme" value="c programming quiz" id="c" required>
+<label for="c" style="font-style:bold;font-size:20px">c programming quiz</label><br>
+<input type="radio" name="tnme" value="java programming quiz" id="java" required>
+<label for="java" style="font-style:bold;font-size:20px" >java programming quiz</label><br>
+<input type="radio" name="tnme" value="javascript quiz" id="js" required>
+<label for="js" style="font-style:bold;font-size:20px">javascript quiz</label><br>
+<input type="radio" name="tnme" value="mysql quiz" id="mysql" required>
+<label for="mysql" style="font-style:bold;font-size:20px">mysql quiz</label>
+</div>
+<p><label style="font-style:bold;font-size:20px;border:2px solid black">enter the registered email:<input type="email" name="em" required></label></p>
+<input type="text" name="var" value="<?php echo $name ?>" style="display:none" >
+<script>
+function fun9()
+{
+let modval=document.getElementById('scr').value;
+document.getElementById('scr').value=parseInt(modval);
+}
+fun9();
+</script>
+<div><input type="submit" value="SUBMIT" style="font-style:bold;font-size:20px;background-color:green" ></div>
+</form>
+</body>
+</html>

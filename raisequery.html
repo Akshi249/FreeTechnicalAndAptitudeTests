@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>raise the query</title>
+<style>
+body{
+background-image:url('nice.jpeg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<h2 style="font-style:bold;font-size:20px"></h2>
+<div style="margin:50px">
+<form method="post" action="rqry.php">
+<input type="text" value="<?php echo $email; ?>" id="em" name="em" style="display:none" >
+<script>
+function greet()
+{
+document.getElementById('gh').innerHTML="HELLO...!!!!!"+document.getElementById('em').value;
+}
+greet();
+</script>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Registered Email<input type="email" value="" style="padding:5px;margin:9px" name="qre" required></p>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Today Date<input type="date" value="" name="qdt" style="padding:5px;margin:9px" required></p>
+<p style="text-align:center;display:block;font-size:25px;font-style:bold;color:grey;padding:5px;margin:5px">Issue Your Facing</p>
+<p style="text-align:center"><textarea rows="5" cols="50" placeholder="type the issue you are facing with our website here" name="issue" style='display:inline'></textarea></p>
+<p style="text-align:center"><input type="submit" value="SUBMIT" style="background-color:green;font-size:25px;font-style:bold"></p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>c programming quiz</title>
+<style>
+body{
+background-image:url('nice.jpeg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<script>
+var icnt=-1,dcnt=-1;
+//alert("before icnt:"+icnt+" "+"dcnt: "+dcnt);
+var incr=(function(){
+icnt=0;
+return function(){ icnt++;};
+}());
+var decr=(function(){
+ dcnt=0;
+return function(){dcnt--;};
+}());
+//alert("after icnt:"+icnt+" "+"dcnt: "+dcnt);
+function showscr()
+{
+document.getElementById('totscr').innerHTML=(icnt+dcnt);
+document.getElementById('scr').value=(icnt+dcnt);
+}
+/*decr();
+incr();
+decr();*/
+//alert("after icnt:"+icnt+" "+"dcnt: "+dcnt);
+function fun1(id)
+{
+let x=document.getElementById("1q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "qa":document.getElementById("fqans").value="120";break;
+case "qb":document.getElementById("fqans").value="180";break;
+case "qc":document.getElementById("fqans").value="324";break;
+case "qd":document.getElementById("fqans").value="150";break;
+}
+showscr();
+}
+
+function fun2(id)
+{
+let x=document.getElementById("2q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q2a":document.getElementById("sqans").value="650";break;
+case "q2b":document.getElementById("sqans").value="690";break;
+case "q2c":document.getElementById("sqans").value="698";break;
+case "q2d":document.getElementById("sqans").value="700";break;
+}
+showscr();
+}
+
+function fun3(id)
+{
+let x=document.getElementById("3q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q3a":document.getElementById("tqans").value="15";break;
+case "q3b":document.getElementById("tqans").value="16";;break;
+case "q3c":document.getElementById("tqans").value="18";;break;
+case "q3d":document.getElementById("tqans").value="25";break;
+}
+showscr();
+}
+
+function fun4(id)
+{
+let x=document.getElementById("4q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q4a":document.getElementById("ftqans").value="0";break;
+case "q4b":document.getElementById("ftqans").value="1";break;
+case "q4c":document.getElementById("ftqans").value="10";break;
+case "q4d":document.getElementById("ftqans").value="19";break;
+}
+showscr();
+}
+
+function fun5(id)
+{
+let x=document.getElementById("5q");
+for(let i=0;i<x.children.length;i++)
+{
+let p=x.children[i];
+p.firstElementChild.disabled=true;
+p.firstElementChild.style.color='yellow';
+}
+switch(id)
+{
+case "q5a":document.getElementById("ffqans").value="xy/d";break;
+case "q5b":document.getElementById("ffqans").value="xd";break;
+case "q5c":document.getElementById("ffqans").value="yd";break;
+case "q5d":document.getElementById("ffqans").value="yd/x";break;
+}
+showscr();
+}
+</script>
+<div style="text-align:center;border:4px solid green;color:white;font-size:35px;background-color:blue;font-style:bold">
+FREE TECHNICAL AND APTITUDE TESTS
+</div>
+<h2 style="text-align:center;font-style:bold;font-size:20px">APTITUDE TEST</h2>
+
+<div  <?php echo $style1; ?> >
+<pre id="pr1">
+<form method="post" action="new_signup.php" >
+<input type="text" name="nme" value=" <?php echo $name;?> " style="display:none">
+<input type="text" name="f1" value="id1" style="display:none">
+<div style="text-align:center"><pre style="font-size:20px;font-style:bold;display:inline;text-align:center">Dont have an account? Create one</pre></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">First Name:<input type="text" name="fn" value="" id="fn" style="margin:5px;padding:5px" required></p></div>  
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">Last Name:<input type="text" name="ln" value="" id="ln" style="margin:5px;padding:5px" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">Email Id:<input type="email" name="em" value="" id="em" style="margin:5px;padding:5px" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px;">Password:<input type="password" name="pwd" value="" style="margin:5px;padding:5px" id="pwd"></p></div>
+<div style="text-align:center"><p style="display:inline;margin:5px"><input type="submit" value="SIGN UP" style="background-color:green"></p></div>
+</form>
+</pre>
+
+<pre id="pr2">
+<form method="post" action="new_login.php">
+<input type="text" name="nme" value=" <?php echo $name; ?>" style="display:none">
+<input type="text" name="f1" value="id1" style="display:none">
+<div style="text-align:center"><pre style="font-size:20px;font-style:bold;display:inline">Already have an account? Login here</pre></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Registered Email:<input type="email" style="margin:5px;padding:5px" name="em" value="" required></p></div>
+<div style="text-align:center"><p style="display:inline;font-size:20px;font-style:bold;margin:5px">Password:<input type="password" style="margin:5px;padding:5px" name="pwd" value="" required></p></div>
+<pre style='display:inline'>                                                                                                                  <span><a href="forgot.html" style='color:black;text-decoration:none;font-size:19px;font-style:bold'>Forgot Password?</a></span></pre>
+<div style="text-align:center"><p style="display:inline;margin:5px"><input type="submit" value="LOG IN" style="text-align:center;background-color:green"></p></div>
+</form>
+</pre>
+</div>
+
+<div>
+<p style="font-size:20px;font-style:bold;border:2px solid black">1. A train running at the speed of 60km/hr crosses a pole in 9 secs. what is the length of the train</p>
+<div id="1q">
+<p><button onclick="fun1(this.id)" id="qa" style="background-color:green;color:white">120 metres</button></p>
+<p><button onclick="fun1(this.id)" id="qb" style="background-color:green;color:white">180 metres</button></p>
+<p><button onclick="fun1(this.id)" id="qc" style="background-color:green;color:white">324 metres</button></p>
+<p><button onclick="fun1(this.id)" id="qd" style="background-color:green;color:white">150 metres</button></p>
+</div>
+</div>
+
+<div>
+<p style="font-size:20px;font-style:bold;border:2px solid black">2.A sum of money at simple interest amounts to Rs. 815 in 3 years and to Rs. 854 in 4 years. the sum is:</p>
+<div id="2q">
+<p><button onclick="fun2(this.id)" id="q2a" style="background-color:green;color:white">650</button></p>
+<p><button onclick="fun2(this.id)" id="q2b" style="background-color:green;color:white">690</button></p>
+<p><button onclick="fun2(this.id)" id="q2c" style="background-color:green;color:white">698</button></p>
+<p><button onclick="fun2(this.id)" id="q2d" style="background-color:green;color:white">700</button></p>
+</div>
+</div>
+
+
+<div>
+<p style="font-size:20px;font-style:bold;border:2px solid black">3.The cost price of 20 articles is the same as the selling price of x articles. if the profit is 25%, then the value of x is:</p>
+<div id="3q">
+<p><button onclick="fun3(this.id)" id="q3a" style="background-color:green;color:white">15</button></p>
+<p><button onclick="fun3(this.id)" id="q3b" style="background-color:green;color:white">16</button></p>
+<p><button onclick="fun3(this.id)" id="q3c" style="background-color:green;color:white">18</button></p>
+<p><button onclick="fun3(this.id)" id="q3d" style="background-color:green;color:white">25</button></p>
+</div>
+</div>
+
+
+<div>
+<p style="font-size:20px;font-style:bold;border:2px solid black">4.The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?</p>
+<div id="4q">
+<p><button onclick="fun4(this.id)" id="q4a" style="background-color:green;color:white">0</button></p>
+<p><button onclick="fun4(this.id)" id="q4b" style="background-color:green;color:white">1</button></p>
+<p><button onclick="fun4(this.id)" id="q4c" style="background-color:green;color:white">10</button></p>
+<p><button onclick="fun4(this.id)" id="q4d" style="background-color:green;color:white">19</button></p>
+</div>
+</div>
+
+
+<div>
+<p style="font-size:20px;font-style:bold;border:2px solid black">5.The cost of x metres of wire is d rupees, then what is the cost of y metres of wire at the same rate?</p>
+<div id="5q">
+<p><button onclick="fun5(this.id)" id="q5a" style="background-color:green;color:white">xy/d</button></p>
+<p><button onclick="fun5(this.id)" id="q5b" style="background-color:green;color:white">xd</button></p>
+<p><button onclick="fun5(this.id)" id="q5c" style="background-color:green;color:white">yd</button></p>
+<p><button onclick="fun5(this.id)" id="q5d" style="background-color:green;color:white">yd/x</button></p>
+</div>
+</div>
+
+<form method="post" action="update.php">
+
+<input type="text" value="" name="fqans" id="fqans" style="display:none">
+<input type="text" value="" name="sqans" id="sqans" style="display:none">
+<input type="text" value="" name="tqans" id="tqans" style="display:none">
+<input type="text" value="" name="ftqans" id="ftqans" style="display:none">
+<input type="text" value="" name="ffqans" id="ffqans" style="display:none">
+<div><input type="text" style="display:none" id="scr" name="scr" value=0></div>
+<div><input type="text" style="display:none" id="name" name="var" value="<?php echo $name; ?>"></div>
+<div><label style="border:2px solid black;font-size:20px;font-style:bold">enter the date of taking test:<input type="date" name="date" id="date" required><label></div>
+<div>
+<p style="font-style:bold;font-size:20px;border:2px solid black">select the test name:</p>
+<input type="radio" name="tnme" id="apt" value="aptitude quiz" required>
+<label for="apt" style="font-style:bold;font-size:20px">aptitude quiz</label><br>
+<input type="radio" name="tnme" value="c programming quiz" id="c" required>
+<label for="c" style="font-style:bold;font-size:20px">c programming quiz</label><br>
+<input type="radio" name="tnme" value="java programming quiz" id="java" required>
+<label for="java" style="font-style:bold;font-size:20px" >java programming quiz</label><br>
+<input type="radio" name="tnme" value="javascript quiz" id="js" required>
+<label for="js" style="font-style:bold;font-size:20px">javascript quiz</label><br>
+<input type="radio" name="tnme" value="mysql quiz" id="mysql" required>
+<label for="mysql" style="font-style:bold;font-size:20px">mysql quiz</label>
+</div>
+<p><label style="font-style:bold;font-size:20px;border:2px solid black">enter the registered email:<input type="email" name="em" required></label></p>
+<script>
+function fun9()
+{
+let modval=document.getElementById('scr').value;
+document.getElementById('scr').value=parseInt(modval);
+}
+fun9();
+</script>
+<div><input type="submit" value="SUBMIT" style="font-style:bold;font-size:20px;background-color:green" ></div>
+</form>
+</body>
+</html>

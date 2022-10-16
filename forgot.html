@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+forgot password
+</title>
+<style>
+body{
+background-image:url('nice.jpeg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<div style='text-align:center;margin-top:150px'>
+<form method='post' action='forgot.php'>
+<input type="text" name="t" value="<?php $val=$_POST['f1']; switch($val){case 'id1':echo 'id1';break;case 'id2':echo 'id2';break;case 'id3':echo 'id3';break;case 'id4':echo 'id4';break;case 'id5':echo 'id5';break;} ?>" style='display:none'>
+<p style='text-align:center;font-style:bold;font-size:19px'>Registered Email<input type="email" name="eml" value="" required></p>
+<p style='text-align:center'><input type='submit' value='next' style='background-color:green;font-size:20px;font-style:bold;color:white'></p>
+</form>
+</div>
+</body>
+</html>
